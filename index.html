@@ -1,0 +1,136 @@
+<!--Date i finish -->
+<!-- April 17, 2023-->
+
+<!doctype html>
+<html lang>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Crystal Tower</title>
+
+    <link rel="website icon" type="png" sizes="32x32" href="logo-white.png">
+
+    <link rel="stylesheet" href="Design.css">
+
+</head>
+
+<body>
+
+    <div class="mainbox">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Sign Up</button>
+            </div>
+            <div class="word">
+                <h1>Crystal Tower</h1>
+            </div>
+
+            <form id="login" class="input-group">
+
+                        Email Address
+                        <input type="email" name="username" class="input-field" placeholder="" required>
+                        Password:
+                        <input type="password"  name="password" class="input-field" id="inputUser" placeholder="" required>
+
+                        <input type="checkbox" onclick="myOnFunction()"> Show Password
+
+                <script> function myOnFunction() {
+                        var x = document.getElementById("inputUser");
+                        if (x.type === "password") {
+                            x.type = "text";
+                        } else {
+                            x.type = "password";
+                        }
+                    }</script>
+
+                <input type="checkbox" class="check-box">
+                <p class="term"> Remember me </p>
+
+                <button type="submit" class="submit-btn">Log in</button>
+
+                <script>
+                    document.getElementById('login').addEventListener('submit', function () {
+                            location.reload();
+                            alert('404 Errors');
+                            alert('Oh man! The darkness ate your file again.');
+                            alert('test website only');
+                        });
+
+                         
+
+                </script>
+            </form>
+
+
+            <form id="register" class="input-group">
+
+                        Username:
+                        <input type="text" class="input-field" placeholder="" required>
+                        Email address:
+                        <input type="email" class="input-field" placeholder="" required>
+                        Password:
+                        <input type="password" class="input-field" id="theInput" placeholder="" required>
+
+                        <input type="checkbox" onclick="OnFunction()"> Show Password
+
+                <script>
+                    function OnFunction() {
+                        var x = document.getElementById("theInput");
+                        if (x.type === "password") {
+                            x.type = "text";
+                        } else {
+                            x.type = "password";
+                        }
+                    }
+                </script>
+
+
+
+                <input type="checkbox" class="check-box">
+                <p class="term"> I agree to the <a href="#" class="no-underline">terms and conditions</a> </p>
+
+                <button type="submit" id="clearButton" class="submit-btn">Register</button>
+                <script>
+                    document.getElementById('register').addEventListener('submit', function () {
+                            location.reload();
+                        });
+
+                    document.getElementById('register').addEventListener('submit', function (event) {
+                            event.preventDefault(); // Prevent form submission
+                            // Perform form validation and registration logic here
+                            // Replace this with your actual registration logic
+                            alert('Registration complete.');
+                        });
+
+                </script>
+            </form>
+            <p class="copy">DevStygian © 2023 | ALL RIGHTS RESERVED</p>
+        </div>
+
+    </div>
+
+    <script>
+        var x = document.getElementById("login")
+        var y = document.getElementById("register")
+        var z = document.getElementById("btn")
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+    </script>
+
+</body>
+
+</html>

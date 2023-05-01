@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.mainbox {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(cooltower.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form-box {
+    width: 380px;
+    height: 530px;
+    position: relative;
+    margin: 7% auto;
+    /* border: 1px rgb(0, 255, 200) solid; */
+    background: #03edf5a2;
+    border-radius: 15px;
+    padding: 5px;
+
+    overflow: hidden;
+}
+
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #01ffd5;
+    border-radius: 30px;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.word {
+    text-align: center;
+}
+
+.input-group {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border: 2px solid #095044;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+}
+
+.input:focus,
+.input-field:focus {
+    border: 2px solid #ff00d4;
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+
+}
+
+.check-box {
+    margin: 30px 10px 30px 0;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 10px;
+}
+
+.term {
+    padding-left: 20px;
+    margin-top: -45px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.no-underline {
+    text-decoration: none;
+}
+#login {
+    left: 50px;
+}
+
+#register {
+    left: 450px;
+}
+
+.copy {
+    background-color: transparent;
+    margin-top: 360px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 13px;
+}
